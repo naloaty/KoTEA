@@ -5,7 +5,7 @@ import android.content.res.ColorStateList
 import android.graphics.drawable.Drawable
 import androidx.core.content.ContextCompat
 
-internal class ContextResourcesProvider(private val context: Context) : ResourcesProvider {
+class ContextResourcesProvider(private val context: Context) : ResourcesProvider {
 
     override fun getString(resource: Int, vararg args: Any?): String {
         return context.resources.getString(resource, *args)
